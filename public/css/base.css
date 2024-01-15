@@ -36,41 +36,47 @@ button.btn-light {
     background-color: #038420;
 }
 
+/* base.css */
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* 100% de la hauteur de la vue (viewport) */
 }
 
 main {
-    flex: 1;
+    flex: 1; /* La partie principale de la page occupe tout l'espace disponible */
 }
 
 footer {
     background-color: #2a2929;
     color: white;
-    padding: 10px;
-    width: 100%;
-    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%; /* Le footer occupe la largeur complète */
+    bottom: 0; /* Collé au bas de la fenêtre du navigateur */
+}
+
+.image{
+    position: relative;
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la vue (viewport) */
 
-.logo {
-    color: #038420;
-    font-family: Inter;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: normal;
 }
-
-/* Nouvelle règle pour le texte à droite du footer */
-footer div.right-text {
-    text-align: right;
+.text-overlay {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text-align: center;*/
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2; /* Assure que le texte est au-dessus de l'image (z-index 1 par défaut) */
 }
-
