@@ -1,0 +1,61 @@
+/* styles.css */
+
+header {
+    background-color: #2a2929;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div:first-child {
+    float: left;
+    color: #038420;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+header div:last-child {
+    float: right;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.numero {
+    margin-right: 50px;
+}
+
+button.btn-light {
+    background-color: #038420;
+}
+
+/* base.css */
+
+body {
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la vue (viewport) */
+}
+
+main {
+    flex: 1; /* La partie principale de la page occupe tout l'espace disponible */
+}
+
+footer {
+    background-color: #2a2929;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%; /* Le footer occupe la largeur complète */
+    bottom: 0; /* Collé au bas de la fenêtre du navigateur */
+}
