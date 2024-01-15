@@ -59,3 +59,24 @@ footer {
     width: 100%; /* Le footer occupe la largeur complète */
     bottom: 0; /* Collé au bas de la fenêtre du navigateur */
 }
+
+.image{
+    position: relative;
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la vue (viewport) */
+
+}
+.text-overlay {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text-align: center;*/
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 2; /* Assure que le texte est au-dessus de l'image (z-index 1 par défaut) */
+}
