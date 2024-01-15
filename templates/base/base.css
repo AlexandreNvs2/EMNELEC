@@ -28,3 +28,14 @@ header div:last-child {
 button.btn-light {
     background-color: #038420;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
