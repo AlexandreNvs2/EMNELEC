@@ -3,21 +3,33 @@
 {% block title %}EMNELEC-Accueil{% endblock %}
 
 {% block body %}
-    <link rel="stylesheet" type="text/css" href="{{ asset('base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('images/base.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <header>
+        <script>
+            function afficherPopup() {
+                // Récupérer l'élément de la pop-up
+                var popup = document.getElementById("popup");
+                // Afficher la pop-up
+                popup.style.display = "block";
+            }
+
+            function fermerPopup() {
+                // Récupérer l'élément de la pop-up
+                var popup = document.getElementById("popup");
+                // Cacher la pop-up
+                popup.style.display = "none";
+            }
+        </script>
         <div style="color: #038420; font-family: Inter; font-size: 64px; font-style: italic; font-weight: 500; line-height: normal;">
             EMN-93270
         </div>
-
         <div>
             <span class="numero">Appelez au : 00 00 00 00 00</span>
-
-            <button class="btn btn-light" style="background-color: #038420; border-color: #038420; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'; ">Obtenir un devis</button>
-
-
+            <button class="btn btn-light" style="background-color: #038420; border-color: #038420" onclick="afficherPopup()">Obtenir un devis</button>
         </div>
     </header>
+
 
 
     <div style="background-color: #038420"><ul class="nav justify-content-center">
@@ -28,16 +40,16 @@
                 <a class="hoverL" href="/description">Description</a>
             </li>
             <li class="nav-item">
-                <a class="hoverL" href="#">Réalisations</a>
+                <a class="hoverL" href="/realisations">Réalisations</a>
             </li>
             <li class="nav-item">
-                <a class="hoverL" href="#">Tarifs</a>
+                <a class="hoverL" href="/tarifs">Tarifs</a>
             </li>
             <li class="nav-item">
-                <a class="hoverL" href="#">Dépannage électrique</a>
+                <a class="hoverL" href="/depannages">Dépannage électrique</a>
             </li>
             <li class="nav-item">
-                <a class="hoverL" href="#">Avis</a>
+                <a class="hoverL" href="/avis">Avis</a>
             </li>
         </ul>
     </div>
@@ -56,5 +68,15 @@
             <p class="numero">Contact : contact@example.com</p>
         </div>
     </footer>
+    <div id="popup" class="popup">
+        <div class="popup-contenu">
+            <span class="fermer" onclick="fermerPopup()">&times;</span>
+            <!-- Contenu de la pop-up -->
+            <h2>Obtenir un devis</h2>
+            <!-- Ajoutez ici les champs nom, numéro de téléphone, mail, message, etc. -->
+            <button onclick="fermerPopup()">Envoyer</button>
+        </div>
+    </div>
+
 
 {% endblock %}
