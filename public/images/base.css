@@ -31,15 +31,36 @@ header div:first-child {
 header div:last-child {
     float: right;
 }
+.nav {
+    position: fixed;
+    height: 30px;
+    top: 90px; /* Ajustez cette valeur selon votre conception */
+    left: 0;
+    width: 100%;
+    background-color: #038420; /* Couleur de fond de la barre de navigation */
+    color: #ffffff; /* Couleur du texte de la barre de navigation */
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: background-color 0.3s ease-out; /* Animation de transition pour une évolution en douceur */
+}
 
 .nav-item {
+
     margin : 5px 15px;
+    margin-top: 1px;
+
 }
+
 
 .hoverL {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s; /* Ajout d'une transition de couleur sur 0.3 seconde */
+
 }
 
 .hoverL:hover {
@@ -121,7 +142,7 @@ footer {
 }
 .text-overlay {
     position: absolute;
-    top: 12%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -180,7 +201,7 @@ footer {
 
 #progress-bar-container {
     position: fixed;
-    top: 9%;
+    top: 12%;
     left: 0;
     width: 100%;
     height: 5px;
