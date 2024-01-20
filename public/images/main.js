@@ -26,3 +26,15 @@ function fermerPopup() {
     popup.style.display = "none";
 }
 
+function envoyerDevis() {
+    var nom = document.getElementById("nom").value;
+    var telephone = document.getElementById("telephone").value;
+    var mail = document.getElementById("mail").value;
+    var description = document.getElementById("description").value;
+
+    // Ajoutez ici votre logique pour envoyer les données, par exemple via AJAX
+
+    // Fermer la pop-up après l'envoi
+    fermerPopup();
+}
+
