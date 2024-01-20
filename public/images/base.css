@@ -69,7 +69,13 @@ header div:last-child {
 }
 
 .numero {
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.siret {
+    margin-top: 20px;
+
 }
 
 button.btn-light {
