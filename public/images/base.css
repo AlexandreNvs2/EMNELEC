@@ -91,7 +91,7 @@ main {
 .description-section {
     background-color: #fff;
     padding: 20px;
-    margin-top: 20px; /* Ajout d'un espace entre le header et la section de description */
+    margin-top: 180px; /* Ajout d'un espace entre le header et la section de description */
     margin-left: 400px;
     margin-right: 400px;
 }
@@ -151,7 +151,7 @@ footer {
     z-index: 2;
 }
 .ecartTableau {
-    padding-top: 30px;
+    padding-top: 150px;
     margin-left: 350px;
     width: 100%;;
 }
@@ -161,11 +161,12 @@ footer {
 }
 
 .avis-block {
+
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     padding: 15px;
     width: 300px;
-    margin: 15px;
+    margin: 150px;
     border-radius: 8px;
 }
 
@@ -201,7 +202,7 @@ footer {
 
 #progress-bar-container {
     position: fixed;
-    top: 12%;
+    top: 12.5%;
     left: 0;
     width: 100%;
     height: 5px;
