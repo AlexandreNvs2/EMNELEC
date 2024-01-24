@@ -13,7 +13,7 @@
         </div>
         <div>
             <span class="numero">Appelez au : 00 00 00 00 00</span>
-            <button class="btn btn-light" style="background-color: #038420; border-color: #038420" onclick="afficherPopup(); transition: transform ,  5;" onmouseover="this.style.transform='scale(1.09)'" onmouseout="this.style.transform='scale(1)'">Obtenir un devis</button>
+            <a href="/devis"><button class="btn btn-light" style="background-color: #038420; border-color: #038420" onmouseover="this.style.transform='scale(1.09)'" onmouseout="this.style.transform='scale(1)'">Obtenir un devis</button></a>
         </div>
     </header>
 
@@ -44,7 +44,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" style="min-height: 87vh;">
         <h1>Formulaire de contact</h1>
         {{ form(form) }}
     </div>
